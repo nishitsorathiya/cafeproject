@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("rubik.ttf");
+}
+
+body {
+  margin: 0px;
+  font-family: "Rubik";
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "top"
+    "bottom";
+}
+
+.section1 {
+  height: 64vh;
+  grid-area: top;
+  background-color: #f5deb3;
+  display: grid;
+  grid-template-areas: "bannerText contactArea";
+  place-items: center;
+  background-image: radial-gradient(black 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.section2 {
+  display: grid;
+  grid-area: bottom;
+  place-items: center;
+  background-color: #2e2522;
+  padding: 8vh;
+}
+
+.section3 {
+  background-color: #f5deb3;
+  display: grid;
+  padding: 8vh;
+  place-items: center;
+}
+
+.section4 {
+  background-color: #2e2522;
+  display: grid;
+  padding: 8vh;
+  place-items: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #2e2522;
+  display: grid;
+  place-items: center;
+}
+
+.footer {
+  width: 85%;
+  display: grid;
+  background-color: #f5deb31a;
+  font-size: x-large;
+  color: #f5deb3;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  padding-top: 1vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  padding-bottom: 1vh;
+  grid-template-areas: "contact copyright";
+}
+
+.contact {
+  grid-area: "contact";
+  text-align: left;
+  font-size: xx-large;
+}
+
+.copyright {
+  display: grid;
+  align-content: center;
+  grid-area: "copyright";
+  text-align: right;
+}
+
+.banner {
+  background-color: #f5deb3;
+  font-size: 64px;
+  grid-area: "bannerText";
+}
+
+.actions {
+  grid-area: "contactArea";
+  display: grid;
+  grid-template-areas:
+    "primaryAction"
+    "secondaryAction";
+  place-items: center;
+}
+
+.primaryButton {
+  grid-area: "primaryAction";
+  font-size: x-large;
+  color: #f5deb3;
+  background-color: #2e2522;
+  border-width: 0px;
+  width: 28vh;
+  padding: 16px;
+  margin: 4px;
+}
+
+.secondaryButton {
+  grid-area: "secondaryAction";
+  font-size: x-large;
+  color: #2e2522;
+  background-color: #f5deb3;
+  border-width: 4px;
+  border-color: #2e2522;
+  width: 28vh;
+  padding: 14px;
+  margin: 4px;
+}
+
+.content {
+  font-size: xx-large;
+  color: #f5deb3;
+}
+
+.details {
+  border-collapse: collapse;
+  grid-template-areas: "one two three four";
+  text-align: center;
+}
+
+.one {
+  grid-area: "one";
+  height: 48vh;
+  width: 25%;
+  background-color: #57514f;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.two {
+  grid-area: "two";
+  height: 48vh;
+  width: 25%;
+  background-color: #433a39;
+}
+
+.three {
+  grid-area: "three";
+  height: 48vh;
+  width: 25%;
+  background-color: #57514f;
+}
+
+.four {
+  grid-area: "four";
+  height: 48vh;
+  width: 25%;
+  background-color: #433a39;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.subtext {
+  font-size: xx-large;
+  color: white;
+}
+
+.menu {
+  overflow-y: scroll;
+  height: 48vh;
+  background-color: #2e25221d;
+  width: 75%;
+  padding: 64px;
+  margin-left: 16vh;
+  margin-right: 16vh;
+  border-radius: 32px;
+}
+
+.menuItem {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.menuDescription {
+  font-size: large;
+  font-style: italic;
+}
